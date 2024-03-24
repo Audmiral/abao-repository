@@ -1,9 +1,51 @@
 body,html{
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
+}
+header{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+/* Your existing CSS */
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+}
+
+.bar {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+#nav-div{
+    width: 60%;
+}
+#nav-div ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5lvw;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    margin: 0;
+}
+#nav-div ul a{
+    text-decoration: none;
+
+}
+#nav-div ul a li{
+    display: flex;
+    font-size: 1.5em;
 }
 body{
     display: flex;
@@ -11,28 +53,37 @@ body{
 }
 header h1{  
     text-align: center;
-    font-size: 5lvw;
+    width: 40%;
 }
-#nav-div{
-    width: 90%;
-    height: 2lvw;
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #nav-div ul {
+        display: none; 
+    }
+    .menu-toggle {
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: end;
+        height: 100%;
+        margin-right: 15%;
+        
+    }
+    #nav-div ul.show {
+        position: absolute;
+        display: flex; 
+        flex-direction: column;
+        justify-content: end;
+        align-content: center;
+        background-color: #ffffff; 
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        margin: 0;
+    }
 }
-#nav-div ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 6lvw;
-    float: right;
-    margin-right: 5%;
-}
-#nav-div ul a{
-    text-decoration: none;
 
-}
-#nav-div ul a li{
-    display: inline;
-    font-size: 1.5em;
-}
+
 .divider{
     width: 80%;
     border: 0;
