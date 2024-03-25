@@ -1,0 +1,64 @@
+/* Your existing CSS */
+
+#intro {
+    width: 100%; /* Ensure the div takes up the full width of its container */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#intro h1 {
+    font-size: 3em; /* Set a default font size for h1 */
+}
+
+#intro p {
+    font-size: 1.5em; /* Set a default font size for p */
+}
+
+button {
+    font-size: 1.5em; /* Set a default font size for button */
+}
+#nav-div ul li{
+    display: flex;
+    font-size: 1.5em;
+
+}
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    #intro h1 {
+        font-size: 2.5em; /* Decrease font size for h1 on smaller screens */
+        margin-top: 15%;
+    }
+
+    #intro p {
+        font-size: 1.2em; /* Decrease font size for p on smaller screens */
+    }
+
+    button {
+        font-size: 1.2em; /* Decrease font size for button on smaller screens */
+    }
+    #nav-div ul li{
+        display: flex;
+        font-size: 1.2em;
+    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #intro h1 {
+        font-size: 2em; /* Further decrease font size for h1 on even smaller screens */
+        margin-top: 20%;
+    }
+
+    #intro p {
+        font-size: 1em; /* Further decrease font size for p on even smaller screens */
+    }
+
+    button {
+        font-size: 1em; /* Further decrease font size for button on even smaller screens */
+    }
+    #nav-div ul li{
+        display: flex;
+        font-size: 1em;
+    
+    }
+}
