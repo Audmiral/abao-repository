@@ -77,6 +77,23 @@ header h1{
     text-align: center;
 }
 /*===================================*/
+.wave-blog {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-blog svg {
+    display: block;
+    width: 100%; 
+    height: auto; 
+    position: relative;
+}
+
+.wave-blog .shape-fill {
+    fill: #A2E2FF;
+}
+
 
 #body{
     width: 100%;
