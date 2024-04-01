@@ -2,7 +2,6 @@
 
 #intro {
     width: 100%; /* Ensure the div takes up the full width of its container */
-    padding: 20px; /* Adjust padding as needed */
     box-sizing: border-box; /* Include padding in the width calculation */
 }
 
@@ -25,25 +24,26 @@ button {
 /* DESKTOP DEVICES */
 @media screen and (min-width: 1024px) {
     #intro h1 {
-        font-size: 2.5em; /* Decrease font size for h1 on smaller screens */
-        margin-top: 15%;
-    }
+        font-size: 3.5lvw; 
+        margin-top: 6%;
+    }   
 
     #intro p {
-        font-size: 1.2em; /* Decrease font size for p on smaller screens */
+        font-size: 1.8lvw; 
+        margin-top: 2%;
     }
 
     button {
-        font-size: 1.2em; /* Decrease font size for button on smaller screens */
+        font-size: 2lvw; 
+        margin-bottom: 10%;
     }
     #nav-div ul li{
         display: flex;
         font-size: 2.2em;
-    
     }
 }
 /* TABLET DEVICES*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     #nav-div ul {
         display: none; 
     }
@@ -70,16 +70,18 @@ button {
         margin: 0;
     }
     #intro h1 {
-        font-size: 1.5em; /* Further decrease font size for h1 on even smaller screens */
-        margin-top: 20%;
+        font-size: 1.5em; 
+        margin-top: 6%;
     }
 
     #intro p {
-        font-size: 1.2em; /* Further decrease font size for p on even smaller screens */
+        font-size: 1.2em; 
+        margin-top: 2%;
     }
 
     button {
-        font-size: 1em; /* Further decrease font size for button on even smaller screens */
+        font-size: 1em; 
+        margin-bottom: 10%;
     }
     #nav-div ul li{
         display: flex;
@@ -115,7 +117,6 @@ button {
     }
     #intro h1 {
         font-size: 1.3em; /* Further decrease font size for h1 on even smaller screens */
-        margin-top: 20%;
     }
 
     #intro p {
