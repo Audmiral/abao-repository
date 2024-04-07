@@ -17,11 +17,23 @@ body,html{
     background: rgb(1,10,21);
 background: linear-gradient(135deg, rgba(1,10,21,1) 0%, rgba(6,41,76,1) 15%, rgba(18,90,165,1) 28%, rgba(27,127,220,1) 54%, rgba(46,150,246,1) 90%);
 }
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 header{
     position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
     background-color: white;
+    z-index: 1000;
 }
 /* Your existing CSS */
 
@@ -76,6 +88,14 @@ header h1{
     color: white;
     text-align: center;
 }
+#intro .fade {
+    position: absolute; 
+    bottom: 0; 
+    width: inherit; 
+    height: 20%; 
+    z-index: 2; 
+    background: rgba(255, 255, 255, 0) linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(4, 2, 113, 0.8) 80%) repeat scroll 0 0;  
+}
 /*===================================*/
 .wave-blog {
     width: 100%;
@@ -102,18 +122,7 @@ header h1{
     flex-direction: row;
     gap: 1lvw;
 }
-#body #blogh1{
-    width: 100%;
-    background-color: white;
-    margin: 0;
-}
-.container{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 .content h1{
     text-align: center;
     font-size: 2em;
@@ -132,22 +141,37 @@ header h1{
     width: 90%;
     height: auto;
 }
+#blogh1{
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 0;
+    padding: 1%;
+    box-shadow: 0px 0px 10px 10px rgb(5, 10, 72);
+    z-index: 100;
+}
+
 /*=========================================*/
   
 #comment{
     width: 100%;
+    gap: 10lvw;
 }
 #form-section{
     width: 60%;
     position: relative;
 }
 #comment #form-section #form{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-content: flex-start;
     justify-content: flex-start;
+    background-color: aquamarine;
+    box-shadow: 0px 0px 15px 10px grey;
+    padding: 5% 0% 0% 5%;
 }
+
 .social-icons{
     display: flex;
     flex-direction: row;
