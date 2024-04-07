@@ -1,0 +1,22 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-Black.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont-medium';
+    src: url('font/Montserrat-Medium.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lobster-Bisque';
+    src: url('font/Lobster\ Bisque.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('font/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
