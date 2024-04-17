@@ -1,28 +1,96 @@
+/*PALLETE
+#020719
+#2069b9
+#03132e
+#02173a
+#225ca0
+#16589c
+*/
 body,html{
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: rgb(1,10,21);
+background: linear-gradient(135deg, rgba(1,10,21,1) 0%, rgba(6,41,76,1) 15%, rgba(18,90,165,1) 28%, rgba(27,127,220,1) 54%, rgba(46,150,246,1) 90%);
+}
+body p{
+    font-family: 'SourceSansPro';
+}
+body h1, h2{
+    font-family: 'Montserrat';
+}
+body a{
+    font-family: 'Mont-medium';
+    color: black;
+}
+#blogpost{
+    background-color: #3a8cff;
+    color: white;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
     width: 100%;
-    height: 100%;
+    background-color: white;
+    z-index: 1000;
 }
-header h1{  
-    text-align: center;
+header h1{
+    font-family: 'Lobster-Bisque';
+    font-style: italic;
 }
+/* Your existing CSS */
+
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+}
+
+.bar {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
 #nav-div{
-    width: 100%;
+    width: 80%;
 }
 #nav-div ul{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    gap: 3em;
-    float: right;
-    margin-right: 5%;
+    flex-wrap: wrap;
+    gap: 5lvw;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    margin: 0;
 }
-#nav-div ul a{
+#nav-div ul li{
+    padding: 1% 2%;
+    border-radius: 15px;
+}
+#nav-div ul li a{
     text-decoration: none;
-
 }
-#nav-div ul a li{
-    display: inline;
-    font-size: 5svh;
+header h1{  
+    text-align: center;
+    width: 40%;
+}
+
+/*============================*/
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#body{
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
 }
