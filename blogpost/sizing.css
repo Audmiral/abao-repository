@@ -42,15 +42,12 @@ button {
         font-size: 2em;
     }
     .blog-box{
-        width: 70%;
-        height: auto;
+        width: 100%;
         align-self: center;
-        margin-bottom: 3%;
     }
     .blogpost{
         width: 100%;
-        height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
     #social-section h2{
         font-size: 2.5em;
