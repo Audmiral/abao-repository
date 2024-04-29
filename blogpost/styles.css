@@ -127,6 +127,7 @@ header h1{
 }
 #comment-left{
     width: 55%;
+    box-shadow: 0px 0px 115px 5px  rgb(0, 183, 255);
 }
 #comment-right{
     width: 35%;
@@ -165,7 +166,7 @@ header h1{
     align-items: flex-start;
     align-content: flex-start;
     justify-content: flex-start;
-    background-color: rgb(0, 153, 255);
+    background-color: rgb(33, 122, 255);
 
     padding: 5% 0% 0% 5%;
 }
@@ -178,6 +179,7 @@ header h1{
   }
   #comment-section{
     background-color: white;
+    padding-bottom: 3%;
   }
   #comment-section .person{
     width: 93%;
