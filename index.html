@@ -36,16 +36,28 @@
         <h1 id="blogh1">Blog Post</h1>
         <div class="content">
             <h1>Video Games</h1>
-            <div class="blog-box">
-                <img class="blogpost" src="img/sample.jpg" media="(min-width: 350px)">
-                <p>Sample descriptsion - Losem Ispium</p>
+            <div class="blog-box" id="containter1">
+                <div class="media-container">
+                    <iframe class="blogpost" id="myVideo1" media="(min-width: 450px) and (max-height: 100px)" src="https://www.youtube.com/embed/_0YwVDJNpXE?si=wIJ4d-EIqtgB8CoE"
+                     title="YouTube video player" frameborder="0" 
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <img class="thumbnail" id="thumbnail1" src="img/thumb1.jpg" media="(min-width: 450px) and (max-height: 100px)">
+                </div>
+                <p style="font-weight: bold;">Riven Jungle</p>
             </div>
         </div>
         <div class="content">
             <h1>Photography</h1>
-            <div class="blog-box">
-                <img class="blogpost" src="img/sample3.jpg" media="(min-width: 350px),">
-                <p>Sample2 descriptsion - Losem Ispium</p>
+            <div class="blog-box" id="containter2">
+                <div class="media-container">
+                    <iframe  class="blogpost" id="myVideo2" media="(min-width: 450px) and (max-width: 500px)" src="https://www.youtube.com/embed/Y1trX0-Byv4?si=EafGHeE6wQFTq7zr" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <img class="thumbnail" id="thumbnail2" src="img/thumb2.jpg" media="(min-width: 450px) and (max-width: 500px)">
+                </div>
+                <p style="font-weight: bold;">Text tutorial effect</p>
             </div>
         </div>
     </div>
@@ -62,7 +74,7 @@
                 </label>
                 <label>Comment:
                 </label>
-                <textarea rows="6" cols="60"></textarea>
+                <textarea id="textarea" rows="6" cols="20"></textarea>
                 <button>Submit</button>
             </form>
         </div>

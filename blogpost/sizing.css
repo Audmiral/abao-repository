@@ -32,7 +32,15 @@ button {
         font-size: 1.8lvw; 
         margin-top: 2%;
     }
-
+    #author{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #author h3{
+        border-bottom: 1px solid rgb(5, 17, 77);
+        padding: 0 1%;
+    }
     button {
         font-size: 2lvw; 
         margin-bottom: 10%;
@@ -50,10 +58,19 @@ button {
     .content-post{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain ;
     }
     .blogpost{
         flex-grow: 1;
+        background-image: url(../img/wildrift.png);
+        background-position: center;
+        background-size: contain;
+    }
+    .tags ul li p{
+        font-size: 1.6em;
+    }
+    #description p{
+        font-size: 1.3em;
     }
     .banner{
         width: 150px;
@@ -70,7 +87,17 @@ button {
     #social-section p{
         font-size: 1.5em;
     }
+    .recent-blog h1{
+        font-family: 'Lobster-Bisque';
+    }
+    .recent-blog #recent-title{
+        font-family: 'SourceSansPro';
+    }
 }
+
+
+
+
 /* TABLET DEVICES*/
 @media screen and (max-width: 1023px) {
     #nav-div ul {
@@ -140,6 +167,13 @@ button {
         width: inherit;
         height: inherit;
     }
+    .recent-title{
+        font-size: 1.3em;
+    }
+    textarea{
+        width: 90%;
+    }
+
 
 }
 /* MOBILE DEVICES*/
@@ -189,17 +223,6 @@ button {
         font-size: 3lvw;
     }
 
-    .blog-box{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 60lvh;
-    }
-    .content-post{
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-    }
     .blogpost{
         flex-grow: 1;
     }
@@ -210,5 +233,33 @@ button {
     .banner-img{
         width: inherit;
         height: inherit;
+    }
+    #comment{
+        display: flex;
+    }
+    #comment-left{
+        width: 100%;
+    }
+    #comment-right{
+        width: 100%;
+    }
+    .banner{
+        display: none;
+        position: absolute;
+    }
+    .blogpost{
+        height: 300px;
+    }
+    .content-post{
+        width: 100%;
+        height: 350px;
+    }
+    .tags{
+        margin: 0 !important;
+        width: 95%;
+    }
+    .tags ul{
+        padding: 0;
+        margin: 4% 6%;
     }
 }

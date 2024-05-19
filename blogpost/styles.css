@@ -103,7 +103,9 @@ header h1{
 }
 #upper h1,#upper h3{
     margin-left: 5%;
+    color: #180077;
 }
+
 .tags ul{
     display: flex;
     gap: 2lvw;
@@ -127,6 +129,10 @@ header h1{
 #description{
     padding-bottom: 4%;
     border-bottom: solid 2px black;
+}
+#description p{
+    font-family: 'SourceSansPro';
+    margin: 2% 5%;
 }
 #comment{
     width: 100%;
@@ -242,4 +248,7 @@ header h1{
 footer p{
     font-size: 2lvw;
     text-align: center;
+}
+#recent1, #recent2{
+    cursor: pointer;
 }
